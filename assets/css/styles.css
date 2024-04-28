@@ -1,0 +1,250 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0; 
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: transparent;
+}
+
+.logo-title-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    mix-blend-mode: multiply;
+}
+
+h1 {
+    margin: 0; 
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    margin: 0;
+}
+
+nav ul li {
+    margin-left: 20px; 
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333; 
+    font-weight: bold;
+}
+
+section {
+    margin: 20px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+}
+
+.pelicula {
+    margin-bottom: 20px;
+}
+
+.pelicula img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #333;
+    color: white;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    box-sizing: border-box;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.main-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    color: white;
+    height: 400px; 
+    position: relative;
+    text-align: center;
+}
+
+.movie-image {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    opacity: 0.5; 
+    position: absolute;
+}
+
+.section-entertainment {
+    position: relative;
+    z-index: 10;
+}
+
+.titles-container {
+    max-width: 800px;
+    padding: 20px;
+}
+
+.btn-signup {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #e50914;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.peliculas-galeria {
+    display: flex;
+    flex-wrap: nowrap; 
+    animation: desplazar 30s linear infinite; 
+}
+
+.pelicula {
+    flex: 0 0 25%; 
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.pelicula img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.pelicula h3 {
+    text-align: center;
+}
+
+.pelicula:hover {
+    transform: scale(1.05);
+}
+
+@keyframes desplazar {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); } 
+}
+
+.peliculas-container {
+    position: relative;
+    margin: 20px 0;
+    overflow: hidden;
+}
+
+.peliculas-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.pelicula-grid {
+    width: 23%;
+    margin: 1%;
+}
+
+.btn-prev, .btn-next {
+    position: absolute;
+    top: 50%;
+    padding: 10px 20px;
+    color: white;
+    background-color: #444;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-prev {
+    left: 10px;
+}
+
+.btn-next {
+    right: 10px;
+}
+
+.btn-prev:hover, .btn-next:hover {
+    background-color: #666;
+} 
+
+.peliculas-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+    padding: 20px; 
+}
+
+.pelicula-grid {
+    width: 23%; 
+    margin: 2%;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
+    transition: transform 0.3s ease; 
+}
+
+.pelicula-grid img {
+    width: 100%; 
+    height: auto; 
+    border-radius: 8px; 
+}
+
+.pelicula-grid:hover {
+    transform: scale(1.05); 
+}
+
+.btn-prev, .btn-next {
+    position: absolute;
+    top: 50%; 
+    transform: translateY(-50%); 
+    padding: 10px 20px;
+    color: white;
+    background-color: #444;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-prev {
+    left: 0;
+}
+
+.btn-next {
+    right: 0; 
+}
+
+.btn-prev:hover, .btn-next:hover {
+    background-color: #666; 
+}
+
+
