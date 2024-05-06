@@ -166,24 +166,6 @@ button {
     transform: scale(1.03);
 }
 
-.btn-prev,
-.btn-next {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    border: none;
-    background-color: transparent;
-    cursor: pointer;
-    font-size: 24px;
-}
-
-.btn-prev {
-    left: 10px;
-}
-
-.btn-next {
-    right: 10px;
-}
 
 .peliculas-galeria {
     display: flex;
