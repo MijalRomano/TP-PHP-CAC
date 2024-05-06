@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Películas Populares</title>
+    <title>MOVIES</title>
     <link rel="stylesheet" href="/assets/css/styles.css">
 </head>
 
@@ -12,7 +12,7 @@
     <header>
         <div class="logo-title-container">
             <img src="/assets/images/logo.png" alt="Logo" class="logo">
-            <h1>Películas Populares</h1>
+            <h1>MOVIES</h1>
         </div>
         <nav>
             <ul>
@@ -24,48 +24,69 @@
     </header>
     <div class="main-content">
         <img src="assets/images/cine.png" alt="Imagen de cine" class="movie-image">
-        <div class="section-entertainment">
-            <div class="titles-container">
-                <h1>Películas y series ilimitadas en un solo lugar</h1>
-                <h2>Disfruta donde quieras. Cancela en cualquier momento.</h2>
-                <a href="./pages/registro.html" class="btn-signup">Regístrate</a>
-            </div>
+        <div class="titles-container">
+            <h1>Todas tu series y películas favoritas están aquí</h1>
+            <h2>Disfrútalas en cualquier momento y lugar.</h2>
+            <a href="./pages/registro.html" class="btn-signup">Regístrate</a>
         </div>
     </div>
     <section id="tendencias-hoy">
         <h2 style="text-align: center;">Las tendencias de hoy</h2>
         <div class="peliculas-container">
+            <button class="btn-prev">&#10094;</button>
             <div class="peliculas-grid">
-                <!-- Aquí van las imágenes y detalles de las películas -->
-                <div class="pelicula-grid" style="order: 1;">
-                    <img src="assets/images/peli_1.jpg" alt="Nombre Película 1">
-                    <h3>Nombre Película 1</h3>
+                <div class="peliculas-grid">
+                    <div class="pelicula-grid">
+                        <img src="assets/images/peli_1.jpg" alt="Nombre Película 1">
+                        <h3>Nombre Película 1</h3>
+                    </div>
+                    <div class="pelicula-grid">
+                        <img src="assets/images/peli_2.jpg" alt="Nombre Película 2">
+                        <h3>Nombre Película 2</h3>
+                    </div>
+                    <div class="pelicula-grid">
+                        <img src="assets/images/peli_3.jpg" alt="Nombre Película 3">
+                        <h3>Nombre Película 3</h3>
+                    </div>
+                    <div class="pelicula-grid">
+                        <img src="assets/images/peli_4.jpg" alt="Nombre Película 4">
+                        <h3>Nombre Película 4</h3>
+                    </div>
+                    <div class="pelicula-grid">
+                        <img src="assets/images/peli_5.jpg" alt="Nombre Película 5">
+                        <h3>Nombre Película 5</h3>
+                    </div>
+                    <div class="pelicula-grid">
+                        <img src="assets/images/peli_6.jpg" alt="Nombre Película 6">
+                        <h3>Nombre Película 6</h3>
+                    </div>
+                    <div class="pelicula-grid">
+                        <img src="assets/images/peli_7.jpg" alt="Nombre Película 7">
+                        <h3>Nombre Película 7</h3>
+                    </div>
+                    <div class="pelicula-grid">
+                        <img src="assets/images/peli_8.jpg" alt="Nombre Película 8">
+                        <h3>Nombre Película 8</h3>
+                    </div>
+                    <div class="pelicula-grid">
+                        <img src="assets/images/peli_13.jpg" alt="Nombre Película 9">
+                        <h3>Nombre Película 9</h3>
+                    </div>
+                    <div class="pelicula-grid">
+                        <img src="assets/images/peli_10.jpg" alt="Nombre Película 10">
+                        <h3>Nombre Película 10</h3>
+                    </div>
+                    <div class="pelicula-grid">
+                        <img src="assets/images/peli_11.jpg" alt="Nombre Película 11">
+                        <h3>Nombre Película 11</h3>
+                    </div>
+                    <div class="pelicula-grid">
+                        <img src="assets/images/peli_12.jpg" alt="Nombre Película 12">
+                        <h3>Nombre Película 12</h3>
+                    </div>
+                    <button class="btn-next">&#10095;</button>
                 </div>
-                <div class="pelicula-grid" style="order: 1;">
-                    <img src="assets/images/peli_2.jpg" alt="Nombre Película 2">
-                    <h3>Nombre Película 2</h3>
-                </div>
-                <div class="pelicula-grid" style="order: 1;">
-                    <img src="assets/images/peli_3.jpg" alt="Nombre Película 2">
-                    <h3>Nombre Película 3</h3>
-                </div>
-                <div class="pelicula-grid" style="order: 1;">
-                    <img src="assets/images/peli_4.jpg" alt="Nombre Película 4">
-                    <h3>Nombre Película 4</h3>
-                </div>
-                <div class="pelicula-grid" style="order: 1;">
-                    <img src="assets/images/peli_5.jpg" alt="Nombre Película 5">
-                    <h3>Nombre Película 5</h3>
-                </div>
-                <div class="pelicula-grid" style="order: 1;">
-                    <img src="assets/images/peli_6.jpg" alt="Nombre Película 6">
-                    <h3>Nombre Película 6</h3>
-                </div>
-            </div>
-        </div>
-      
     </section>
-
     <section id="tendencias">
         <h2 style="text-align: center;">las mas aclamadas</h2>
         <div class="peliculas-galeria">
@@ -119,10 +140,20 @@
             </div>
         </div>
     </section>
-
     <footer>
-      
+        <div class="footer-content">
+            <ul>
+                <li><a href="#terminos">Términos y Condiciones</a></li>
+                <li><a href="#preguntas">Preguntas Frecuentes</a></li>
+                <li><a href="#ayuda">Ayuda</a></li>
+            </ul>
+            <button class="btn-admin">Administrador Películas</button>
+        </div>
     </footer>
+
+</body>
+
+</html>
 </body>
 
 </html>
