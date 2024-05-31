@@ -22,120 +22,34 @@
             </ul>
         </nav>
     </header>
+
+    <div class="weather-container">
+        <h2>Clima actual</h2>
+        <p id="weather"></p>
+    </div>
+    <div class="search-container">
+        <input type="text" id="searchInput" placeholder="Buscar películas...">
+    </div>
     <div class="main-content">
         <img src="assets/images/cine.png" alt="Imagen de cine" class="movie-image">
         <div class="titles-container">
             <h1>Todas tu series y películas favoritas están aquí</h1>
             <h2>Disfrútalas en cualquier momento y lugar.</h2>
-            <a href="./pages/registro.html" class="btn-signup">Regístrate</a>
+            <a href="./pages/login.html" class="btn-signup">Regístrate</a>
         </div>
     </div>
     <section id="tendencias-hoy">
         <h2 style="text-align: center;">Las tendencias de hoy</h2>
         <div class="peliculas-container">
-            <div class="peliculas-grid">
-                <div class="peliculas-grid">
-                    <div class="pelicula-grid">
-                        <img src="assets/images/peli_1.jpg" alt="Nombre Película 1">
-                        <h3>Nombre Película 1</h3>
-                    </div>
-                    <div class="pelicula-grid">
-                        <img src="assets/images/peli_2.jpg" alt="Nombre Película 2">
-                        <h3>Nombre Película 2</h3>
-                    </div>
-                    <div class="pelicula-grid">
-                        <img src="assets/images/peli_3.jpg" alt="Nombre Película 3">
-                        <h3>Nombre Película 3</h3>
-                    </div>
-                    <div class="pelicula-grid">
-                        <img src="assets/images/peli_4.jpg" alt="Nombre Película 4">
-                        <h3>Nombre Película 4</h3>
-                    </div>
-                    <div class="pelicula-grid">
-                        <img src="assets/images/peli_5.jpg" alt="Nombre Película 5">
-                        <h3>Nombre Película 5</h3>
-                    </div>
-                    <div class="pelicula-grid">
-                        <img src="assets/images/peli_6.jpg" alt="Nombre Película 6">
-                        <h3>Nombre Película 6</h3>
-                    </div>
-                    <div class="pelicula-grid">
-                        <img src="assets/images/peli_7.jpg" alt="Nombre Película 7">
-                        <h3>Nombre Película 7</h3>
-                    </div>
-                    <div class="pelicula-grid">
-                        <img src="assets/images/peli_8.jpg" alt="Nombre Película 8">
-                        <h3>Nombre Película 8</h3>
-                    </div>
-                    <div class="pelicula-grid">
-                        <img src="assets/images/peli_13.jpg" alt="Nombre Película 9">
-                        <h3>Nombre Película 9</h3>
-                    </div>
-                    <div class="pelicula-grid">
-                        <img src="assets/images/peli_10.jpg" alt="Nombre Película 10">
-                        <h3>Nombre Película 10</h3>
-                    </div>
-                    <div class="pelicula-grid">
-                        <img src="assets/images/peli_11.jpg" alt="Nombre Película 11">
-                        <h3>Nombre Película 11</h3>
-                    </div>
-                    <div class="pelicula-grid">
-                        <img src="assets/images/peli_12.jpg" alt="Nombre Película 12">
-                        <h3>Nombre Película 12</h3>
-                    </div>
-                </div>
+            <div class="peliculas-grid" id="tendenciasGrid">
+
+            </div>
+        </div>
     </section>
     <section id="tendencias">
-        <h2 style="text-align: center;">las mas aclamadas</h2>
-        <div class="peliculas-galeria">
-            <div class="pelicula">
-                <img src="assets/images/aclamada_1.jpg" alt="Nombre Película 1">
-                <h3>Nombre Película 1</h3>
-            </div>
-            <div class="pelicula">
-                <img src="assets\images\aclamada_2.jpg" alt="Nombre Película 2">
-                <h3>Nombre Película 2</h3>
-            </div>
-            <div class="pelicula">
-                <img src="assets\images\aclamada_3.jpg" alt="Nombre Película 3">
-                <h3>Nombre Película 3</h3>
-            </div>
-            <div class="pelicula">
-                <img src="assets\images\aclamada_4.jpg" alt="Nombre Película 4">
-                <h3>Nombre Película 4</h3>
-            </div>
-            <div class="pelicula">
-                <img src="assets\images\aclamada_5.jpg" alt="Nombre Película 5">
-                <h3>Nombre Película 5</h3>
-            </div>
-            <div class="pelicula">
-                <img src="assets\images\aclamada_6.jpg" alt="Nombre Película 6">
-                <h3>Nombre Película 6</h3>
-            </div>
-            <div class="pelicula">
-                <img src="assets\images\aclamada_7.jpg" alt="Nombre Película 7">
-                <h3>Nombre Película 7</h3>
-            </div>
-            <div class="pelicula">
-                <img src="assets\images\aclamada_8.jpg" alt="Nombre Película 8">
-                <h3>Nombre Película 8</h3>
-            </div>
-            <div class="pelicula">
-                <img src="assets\images\aclamada_9.jpg" alt="Nombre Película 9">
-                <h3>Nombre Película 9</h3>
-            </div>
-            <div class="pelicula">
-                <img src="assets\images\aclamada_10.jpg" alt="Nombre Película 10">
-                <h3>Nombre Película 10</h3>
-            </div>
-            <div class="pelicula">
-                <img src="assets\images\aclamada_11.jpg" alt="Nombre Película 11">
-                <h3>Nombre Película 11</h3>
-            </div>
-            <div class="pelicula">
-                <img src="assets\images\aclamada_12.jpg" alt="Nombre Película 12">
-                <h3>Nombre Película 12</h3>
-            </div>
+        <h2 style="text-align: center;">Las más aclamadas</h2>
+        <div class="peliculas-galeria" id="aclamadasGallery">
+
         </div>
     </section>
     <footer>
@@ -149,9 +63,96 @@
         </div>
     </footer>
 
-</body>
+    <script>
 
-</html>
+        const tendenciasPeliculas = [
+            { nombre: 'Nombre Película 1', imagen: 'assets/images/peli_1.jpg' },
+            { nombre: 'Nombre Película 2', imagen: 'assets/images/peli_2.jpg' },
+            { nombre: 'Nombre Película 3', imagen: 'assets/images/peli_3.jpg' },
+            { nombre: 'Nombre Película 4', imagen: 'assets/images/peli_4.jpg' },
+            { nombre: 'Nombre Película 5', imagen: 'assets/images/peli_5.jpg' },
+            { nombre: 'Nombre Película 6', imagen: 'assets/images/peli_6.jpg' },
+            { nombre: 'Nombre Película 7', imagen: 'assets/images/peli_7.jpg' },
+            { nombre: 'Nombre Película 8', imagen: 'assets/images/peli_8.jpg' },
+            { nombre: 'Nombre Película 9', imagen: 'assets/images/peli_13.jpg' },
+            { nombre: 'Nombre Película 10', imagen: 'assets/images/peli_10.jpg' },
+            { nombre: 'Nombre Película 11', imagen: 'assets/images/peli_11.jpg' },
+            { nombre: 'Nombre Película 12', imagen: 'assets/images/peli_12.jpg' }
+        ];
+
+
+        const aclamadasPeliculas = [
+            { nombre: 'Nombre Película 1', imagen: 'assets/images/aclamada_1.jpg' },
+            { nombre: 'Nombre Película 2', imagen: 'assets/images/aclamada_2.jpg' },
+            { nombre: 'Nombre Película 3', imagen: 'assets/images/aclamada_3.jpg' },
+            { nombre: 'Nombre Película 4', imagen: 'assets/images/aclamada_4.jpg' },
+            { nombre: 'Nombre Película 5', imagen: 'assets/images/aclamada_5.jpg' },
+            { nombre: 'Nombre Película 6', imagen: 'assets/images/aclamada_6.jpg' },
+            { nombre: 'Nombre Película 7', imagen: 'assets/images/aclamada_7.jpg' },
+            { nombre: 'Nombre Película 8', imagen: 'assets/images/aclamada_8.jpg' },
+            { nombre: 'Nombre Película 9', imagen: 'assets/images/aclamada_9.jpg' },
+            { nombre: 'Nombre Película 10', imagen: 'assets/images/aclamada_10.jpg' },
+            { nombre: 'Nombre Película 11', imagen: 'assets/images/aclamada_11.jpg' },
+            { nombre: 'Nombre Película 12', imagen: 'assets/images/aclamada_12.jpg' }
+        ];
+
+        function crearTarjetaPelicula(pelicula) {
+            const peliculaDiv = document.createElement('div');
+            peliculaDiv.classList.add('pelicula-grid');
+            const img = document.createElement('img');
+            img.src = pelicula.imagen;
+            img.alt = pelicula.nombre;
+            const h3 = document.createElement('h3');
+            h3.textContent = pelicula.nombre;
+            peliculaDiv.appendChild(img);
+            peliculaDiv.appendChild(h3);
+            return peliculaDiv;
+        }
+
+        function agregarPeliculas(peliculas, contenedorId, filtro = '') {
+            const contenedor = document.getElementById(contenedorId);
+            contenedor.innerHTML = ''; 
+            peliculas.forEach(function(pelicula) {
+                if (pelicula.nombre.toLowerCase().includes(filtro.toLowerCase())) {
+                    const peliculaDiv = crearTarjetaPelicula(pelicula);
+                    contenedor.appendChild(peliculaDiv);
+                }
+            });
+        }
+
+        agregarPeliculas(tendenciasPeliculas, 'tendenciasGrid');
+        agregarPeliculas(aclamadasPeliculas, 'aclamadasGallery');
+
+        document.getElementById('searchInput').addEventListener('input', function(event) {
+            const searchTerm = event.target.value;
+            agregarPeliculas(tendenciasPeliculas, 'tendenciasGrid', searchTerm);
+            agregarPeliculas(aclamadasPeliculas, 'aclamadasGallery', searchTerm);
+        });
+
+        function getWeather() {
+            const apiKey = '4fa7c93170f0052d7c04b444382e0029'; 
+            const city = 'Buenos Aires';
+            const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&lang=es&units=metric`;
+
+            fetch(apiUrl)
+            .then(response => response.json())
+            .then(data => {
+                const temperature = data.main.temp;
+                const description = data.weather[0].description;
+                const cityName = data.name;
+
+                const weatherElement = document.getElementById('weather');
+                weatherElement.textContent = `El clima en ${cityName} es ${description} con una temperatura de ${temperature}°C`;
+            })
+            .catch(error => {
+                console.error('Error al obtener el clima:', error);
+            });
+        }
+
+        document.addEventListener('DOMContentLoaded', getWeather);
+
+    </script>
+
 </body>
 
 </html>
